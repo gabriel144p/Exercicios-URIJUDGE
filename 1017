@@ -1,0 +1,21 @@
+using System;
+using System.Globalization;
+
+namespace exercicio
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int velocidade, horas;
+            float litros, distancia;
+
+            velocidade = int.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+            horas = int.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+            distancia = velocidade * horas;
+            litros = distancia / 12;
+
+            Console.WriteLine(litros.ToString("F3", CultureInfo.InvariantCulture));
+        }
+    }
+}
