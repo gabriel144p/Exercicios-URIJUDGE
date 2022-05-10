@@ -1,0 +1,21 @@
+using System;
+using System.Globalization;
+
+namespace exercicio
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int velocidadeX, velocidadeY, tempo,tempofinal;
+            velocidadeX = 90;
+            velocidadeY = 60;
+
+            tempo = int.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+            tempofinal = tempo * 2;
+            Console.WriteLine(tempofinal + " minutos");
+
+            Console.ReadLine();
+        }
+    }
+}
